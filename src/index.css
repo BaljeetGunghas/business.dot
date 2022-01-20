@@ -1,13 +1,208 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=Luxurious+Roman&display=swap');
+
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+  background-color: #FFF8F3;
+  font-family: 'PT Serif', serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.navcolor {
+  background-color: #030303 !important;
+}
+
+.nav_heding {
+  background-color: #FFFDDE;
+  padding: 0px 5px;
+  border-radius: 5px;
+  margin: 0rem;
+  color: rgb(20, 20, 87);
+}
+
+.iqclass {
+  color: brown;
+  font-size: 1.4rem;
+}
+
+.nav-link:hover {
+  color: rgb(134, 14, 14) !important;
+}
+
+.navbar a {
+  font-size: 1.2rem;
+}
+
+.menu_active {
+  border-bottom: 2px solid rgb(238, 15, 15);
+  font-weight: bold;
+}
+
+/* .sinein{
+  margin: 0%;
+  padding: 0%;
+  width: 70px;
+  height: 30px;
+  justify-content: center;
+  display: flex !important;
+  align-items: center !important;
+  background-color: transparent !important;
+  color: rgb(0, 0, 0) !important;
+  font-size: 15px !important;
+} */
+/* .sinein:hover{
+  background-color: blue !important;
+  color: #fff !important;
+} */
+.sinein {
+  font-size: 14px !important;
+  border: 1px solid #0275d8;
+  text-decoration: none;
+  padding: 1px;
+  margin-right: 2px;
+  width: 60px;
+  height: 30px;
+  justify-content: center;
+  display: flex !important;
+  align-items: center !important;
+  background-color: transparent !important;
+  color: #0275d8 !important;
+  border-radius: 3px;
+  transition: 0.3s;
+}
+
+.sinein:hover {
+  background-color: #0275d8 !important;
+  color: #fff !important;
+  border: none;
+}
+
+.login {
+  font-size: 14px !important;
+  border: 1px solid #d9534f;
+  text-decoration: none;
+  padding: 1px;
+  margin-left: 2px;
+  width: 60px;
+  height: 30px;
+  justify-content: center;
+  display: flex !important;
+  align-items: center !important;
+  background-color: transparent !important;
+  color: #d9534f !important;
+  border-radius: 3px;
+  transition: 0.3s;
+}
+
+.login:hover {
+  background-color: #d9534f !important;
+  color: #fff !important;
+  border: none;
+}
+
+
+
+
+/* home page css is here
+ */
+.grow_business {
+  color: rgba(19, 11, 11, 0.541);
+}
+
+.get_started {
+  width: 140px;
+  background-color: transparent;
+  border: 1px solid rgb(95, 163, 240);
+  border-radius: 20px;
+  padding: 5px 20px;
+  font-size: 18px;
+  text-decoration: none;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+  transition: 0.5s;
+}
+
+.get_started:hover {
+  background-color: rgb(24, 132, 255);
+  color: #fff;
+}
+
+.slidh img {
+  height: 450px;
+  background-size: cover;
+}
+
+.svgclas img {
+  width: 350px;
+  animation: svganim 2s ease-in-out infinite alternate-reverse both;
+}
+
+@keyframes svganim {
+  0% {
+    transform: translateX(10px);
+  }
+
+  100% {
+    transform: translateX(-10px);
+  }
+}
+
+
+/* About page css is here */
+.abutimg img {
+  width: 490px;
+}
+
+.card-img-top {
+  width: 90px;
+  height: 200px;
+  cursor: pointer;
+}
+
+.card-img-top:hover {
+  transform: scale(1.03, 1.03);
+  transition: 1s;
+  opacity: 0.5;
+}
+
+
+
+
+
+
+/* login page css is here?
+ */
+.cardclass {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+
+
+/* footer css is here */
+.footercl {
+  /* background-color: #d9534f !important; */
+  min-height: 100% !important;
+}
+
+
+
+
+@media only screen and (max-width: 991px) {
+*{
+ scroll-behavior: auto;
+}
+.slidh img{
+  height: 350px;
+  margin-top: 15px ;
+}
+.carousel-caption h5{
+  font-size: 20px;
+}
+.carousel-caption p{
+  font-size: 15px;
+}
+.svgimg{
+  width: 240px !important;
+  justify-content: center !important;
+  place-items: center !important;
+}
 }
